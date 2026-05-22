@@ -1,6 +1,6 @@
 Lista 01 — Questão 01: Modelo de Memória
-Aluno: (seu nome)
-Data:  (data)
+Aluno: Guilherme Almeida da Luz
+Data:  21/05/2026
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ENUNCIADO:
@@ -19,5 +19,16 @@ Código:
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 SUA RESPOSTA:
 
-(escreva aqui com suas próprias palavras)
+ao final da execução do código, as variáveis se encontrarão com os seguintes valores,
 
+a = [10, 20, 30, 40]
+b = [10, 20, 30, 40]
+c = [10, 20, 30, 40, 99]
+
+Quando 'a' foi atribuído a 'b', isso significou que 'b' também carregaria uma referência para
+o mesmo endereço de memória que 'a' referencia/aponta. Ou seja, ambos armazenam os mesmos valores
+pois apontam para o mesmo espaço. Portanto, se alterar 'a', será alterado também o 'b' e vice-versa.
+Já a variável 'c' recebeu por atribuição uma cópia do que tem armazenado em 'a', logo, é um outro espaço de memória
+diferente, o qual foi inicializado com valores que tem dentro de 'a' e também 'b', ambos poderiam ser usados para essa
+cópia de valores. No fim, 'c' recebeu mais um elemento na lista que é só dele, pois ele aponta para um lugar/espaço
+diferente 'a' e 'b' na memória.

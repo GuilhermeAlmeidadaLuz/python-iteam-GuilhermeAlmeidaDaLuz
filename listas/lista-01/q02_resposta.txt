@@ -1,6 +1,6 @@
 Lista 01 — Questão 02: Tipos e Conversão
-Aluno: (seu nome)
-Data:  (data)
+Aluno: Guilherme Almeida da Luz
+Data:  21/05/2026
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ENUNCIADO:
@@ -17,5 +17,10 @@ Responda por raciocínio ANTES de executar. Depois confirme no REPL.
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 SUA RESPOSTA:
 
-(escreva aqui com suas próprias palavras)
+  print(type(10 / 2))         # tipo: float   valor: 5.0  | o print vai exibir o tipo float
+  print(type(10 // 2))        # tipo: int   valor: 5      | o print vai exibir o tipo int
+  print(int(3.9))             # tipo: int   valor: 3      | o print vai exibir o valor 3
+  print(bool([]))             # tipo: bool   valor: False | o print vai exibir o valor booleano False
+  print(bool("False"))       # tipo: bool   valor: True   | o print vai exibir o valor booleano True
+  print(str(True) == "True") # tipo: bool   valor: True   | o print vai exibir o valor booleano True
 
