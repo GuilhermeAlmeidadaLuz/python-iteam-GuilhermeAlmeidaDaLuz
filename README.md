@@ -1,4 +1,4 @@
-# python-iteam-SEUNOME
+# python-iteam-GuilhermeAlmeidaDaLuz
 
 ## Como usar este template
 
@@ -22,17 +22,17 @@ Curso: Capacitação em Desenvolvimento Full Stack | 2026
 
 | Campo | Preenchimento |
 |---|---|
-| **Nome completo** | _(preencha aqui)_ |
+| **Nome completo** | _Guilherme Almeida da Luz_ |
 | **Turma** | Vespertino 2026 |
-| **E-mail** | _(preencha aqui)_ |
-| **GitHub** | @_(seu usuário)_ |
+| **E-mail** | _guilhermealmeidadaluz5@gmail.com_ |
+| **GitHub** | @_GulhermeAlmeidadaLuz_ |
 
 ---
 
 ## Estrutura do Repositório
 
 ```
-python-iteam-SEUNOME/
+python-iteam-GuilhermeAlmeidaDaLuz/
 ├── desafios/
 │   ├── desafio-01/   ← Aula 01: Seu Primeiro Script
 │   ├── desafio-02/   ← Aula 02: Calculadora de IMC
