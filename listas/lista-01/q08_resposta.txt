@@ -1,6 +1,6 @@
 Lista 01 — Questão 08: is vs ==
-Aluno: (seu nome)
-Data:  (data)
+Aluno: Guilherme Almeida da Luz
+Data:  25/05/2026
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ENUNCIADO:
@@ -11,5 +11,32 @@ Em que situação é correto usar is em código profissional?
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 SUA RESPOSTA:
 
-(escreva aqui com suas próprias palavras)
+O operador 'is' é usado para verificar se duas ou mais variáveis apontam
+para o mesmo lugar ou objeto na memória, ou seja, possuem a mesma identidade (são o mesmo objeto).
+Já o operador '==' faz uma comparação entre os valores carregados pelas variáveis, verificando se são iguais.
+É recomendado o uso de 'is' na comparação de uma variável com 'None' - uma palavra reservada do python (ex.: if meu_pet is None: ...)
 
+Exemplo com 'is':
+
+lista_a = [1, 2, 3]
+lista_b = lista_a
+lista_a is lista_b  # o retorno deve ser True, pois guardam a mesma referência da memória
+lista_c = [1, 2, 3]
+lista_a is lista_c # o retorno deve ser False, apesar de possuírem o mesmo valor e tipo
+
+Exemplo com '==':
+
+lista_x = [1, 2, 3]
+lista_y = [1, 2, 3]
+lista_x == lista_y # o retorno deve ser True, pois tem os mesmos valores e tipo
+lista_z = [1, 2]
+lista_x == lista_z # o retorno deve ser Falsem, possuem o mesmo tipo, mas não os valores exatos
+
+Obs.: Com relação ao exemplo de '==', apesar do exemplo não ser tão distintivo, o que ocorre é que o interpretador do python lida de uma forma automática com isso,
+se há um bloco na memória com valor 'int(1)' e variável 'a', ao atribuir o valor 'int(1)' para 'b', ele vê que já existe um espaço na memória e reaproveita isso
+por baixo dos panos, usando 'b' para referenciar o valor 'int(1)' também. Então se for feito:
+
+a = 1
+b = 1
+a == b # retorna True na comparação 1 == 1
+a is b # retorna True pois o interpretador do python viu 'a' apontando para 1 e decidiu reaproveitar esse valor salvo na memória para que 'b' apontasse para 1 também.
