@@ -1,6 +1,6 @@
 Lista 01 — Questão 09: EAFP vs LBYL
-Aluno: (seu nome)
-Data:  (data)
+Aluno: Guilherme Almeida da Luz
+Data:  25/05/2026
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ENUNCIADO:
@@ -17,5 +17,32 @@ Em q09_resposta.txt: explique o que significa EAFP e qual versão é mais Pythô
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 SUA RESPOSTA:
 
-(escreva aqui com suas próprias palavras)
+EAFP é "it’s easier to ask for forgiveness than permission”, ou seja, "é mais fácil pedir perdão do que permissão". É uma forma de redirecionar, "Python: sua tentativa
+de atribuir à variável 'valor' não deu certo, capturei isso" "Usuário: perdão python, vou verificar e tratar isso como exceção".
+Isso exemplifica a abordagem do python de "explicito é melhor do que implícito", onde é deixado claro o caminho que o código vai seguir se
+der erro ou não, pois isso traz mais clareza e isola em blocos de código diferentes, facilitado a análise. Exemplo:
 
+# abordagem implícita (LBYL - look before you leap, ou seja, olhe/verifique antes de pular/passar adiante), tratado de forma suprimida
+if "chave" in dict_:
+    faca_algo(dict_["chave"])
+
+# abordagem explícita e mais pythônica, deixando claro os erros que podem ocorrer e o tratamento para eles (EAFP)
+try:
+    valor = dict_["chave"]
+except KeyError:
+    pass
+else:
+    faca_algo(valor)
+
+Portanto, a reescrita da função saí de uma abordagem de verificação de condições de maneira implícita, para uma abordagem de tentativa e captura de exceções de forma explícita:
+def dividir(a, b):
+    try:
+        return a / b
+    except ZeroDivisionError:
+        print('Você tentou dividir por 0, não foi possível efetuar a operação.')
+        return None
+
+print(dividir(10, 2))
+print(dividir(10, 0))
+
+Referência: https://devblogs.microsoft.com/python/idiomatic-python-eafp-versus-lbyl/
