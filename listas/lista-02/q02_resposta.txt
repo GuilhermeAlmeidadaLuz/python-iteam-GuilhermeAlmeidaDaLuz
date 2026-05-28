@@ -1,6 +1,6 @@
 Lista 02 — Questão 02: Escolha da Estrutura
-Aluno: (seu nome)
-Data:  (data)
+Aluno: Guilherme Almeida da Luz
+Data:  27/05/2026
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ENUNCIADO:
@@ -14,5 +14,8 @@ Para cada cenário, indique a estrutura mais adequada (list/tuple/dict/set) e ju
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 SUA RESPOSTA:
 
-(escreva aqui com suas próprias palavras)
-
+a) tuple - pois Coordenadas são um par fixo, não pode ser mudado.
+b) set - pois elimina repetições de CPFs, deixando a estrutura com valores únicos.
+c) dict - pois o código seria uma key/chave que leva a um produto com preço específico, ou seja, o value/valor associado a chave.
+d) list - pois a lista permite que sejam adicionadas novas notas.
+e) tuple - pois uma vez criados, não podem ser alterados, garantindo consistência nos dados. Isso garante que a chave do dicionário não corra o risco de gerar erro por não ser encontrada.
