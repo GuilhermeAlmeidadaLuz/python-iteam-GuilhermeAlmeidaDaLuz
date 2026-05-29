@@ -1,6 +1,6 @@
 Lista 02 — Questão 04: Escopo — LEGB
-Aluno: (seu nome)
-Data:  (data)
+Aluno: Guilherme Almeida da Luz
+Data:  28/05/2026
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ENUNCIADO:
@@ -22,5 +22,11 @@ Explique a regra de escopo (LEGB) que determina cada resultado.
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 SUA RESPOSTA:
 
-(escreva aqui com suas próprias palavras)
+(a) imprime: enclosing
+(b) imprime: enclosing
+(c) imprime: global
 
+LEGB (Local, Enclosing, Global, Built-in) se refere a ordem de prioridades que o interpretador do Python segue para resolver o valor de uma variável,
+primeiro procura no escopo/bloco Local, depois Enclosing (Envolvente - um escopo/bloco pai anterior que envolve um escopo/bloco filho), em seguida Global e por fim Built-im (Embutido).
+No momento que encontra a solução, isto é, a última menção da variável stack (pilha) de execução do código/script, interrompe a busca nos outros escopos. Se não encontrar nenhuma
+declaração da variável em nenhum dos 4 escopos LEGB, retorna um erro de várivel não declarada (mais precisamente: NameError).
