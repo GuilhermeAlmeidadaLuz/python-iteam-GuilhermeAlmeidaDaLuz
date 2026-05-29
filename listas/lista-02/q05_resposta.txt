@@ -1,6 +1,6 @@
 Lista 02 — Questão 05: Funções de Alta Ordem
-Aluno: (seu nome)
-Data:  (data)
+Aluno: Guilherme Almeida da Luz
+Data:  29/05/2026
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ENUNCIADO:
@@ -15,5 +15,9 @@ Em q05_resposta.txt: explique o que significa dizer que funções são
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 SUA RESPOSTA:
 
-(escreva aqui com suas próprias palavras)
+Dizer que em Python as funções são cidadãs de 1ª classe, é afirmar que as funções, assim como qualquer outro objeto declarado
+e utilizado na linguagem (do tipo: int, str, bool, list, dict, set, ...), podem ser atribuídas a variáveis, passadas como argumentos
+para outras funções (como no caso desse exemplo) e ser retornadas por funções.
+
+lista_resultante_1 = aplicar(lista=decimais, funcao=elevar_ao_quadrado) # nesse caso, a função elevar_ao_quadrado é passada com argumento para a função aplicar.
 
